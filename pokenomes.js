@@ -1,6 +1,38 @@
-let nombrepokemon = new Array["Charmanderm", "Charmeleon", "Vulpix", "Ninetales", "Growlithe", "Arcanine", "Ponyta", "Rapidash", "Magmar", "Flareon", "Cyndaquil", "Quilava","Typhlosion", "Slugma", "Magby", "Entei", "Torchic", "Torkoal", "Chimchar", "Magmortar", "Tepig", "Pansear", "Simisear", "Darumaka", "Darmanitan","Heatmor", "Fennekin", "Braixen", "Litten","Torracat", "Scorbunny", "Raboot", "Cinderace"];
+// POKEMONES
 
-nombrepokemon[1];
-"Charmeleon"
+let pokemones = [{
+    nombre: 'Pikachu',
+    tipo: 'Electrico'
+},
+{
+    nombre: 'Charmander',
+    tipo: 'Fuego',
+},
+{
+    nombre: 'Bulbasaur',
+    tipo: 'Planta'
+},
+{
+    nombre: 'Squirtle',
+    tipo: 'Agua'
+},
+{
+    nombre: 'Charmeleon',
+    tipo: 'Fuego'
+},
+{
+    nombre: 'Weedle',
+    tipo: 'bicho'
+},
+{
+    nombre: 'Charizard',
+    tipo: 'Fuego'
+}
+]
 
-console.log(nombrepokemon);
+//FUNCION QUE TOMA LA FUNCION Pokemones_UpperCase Y LA FILTRA POR TIPO "FUEGO"
+let showFuego = Pokemones_UpperCase.filter(function(element) {
+    return element.tipo == "FUEGO";
+});
+
+console.log(showFuego)

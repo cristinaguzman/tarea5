@@ -1,5 +1,40 @@
-let mayusSplit = split.map(palabra => {
-    return palabra[0].toUpperCase() + palabra.slice(1);
-})
+let pokemones = [{
+    nombre: 'Pikachu',
+    tipo: 'Electrico'
+},
+{
+    nombre: 'Charmander',
+    tipo: 'Fuego',
+},
+{
+    nombre: 'Bulbasaur',
+    tipo: 'Planta'
+},
+{
+    nombre: 'Squirtle',
+    tipo: 'Agua'
+},
+{
+    nombre: 'Charmeleon',
+    tipo: 'Fuego'
+},
+{
+    nombre: 'Weedle',
+    tipo: 'bicho'
+},
+{
+    nombre: 'Charizard',
+    tipo: 'Fuego'
+}
+]
 
-console.log(mayusSplit);
+
+//FUNCION TEXTO NORMAL A MAYUSCULAS
+let Pokemones_UpperCase = pokemones.map(function(element) {
+var nombre = element.nombre.toUpperCase();
+var tipo = element.tipo.toUpperCase();
+var Lista = { nombre, tipo };
+return Lista;
+});
+
+console.log(Pokemones_UpperCase);
